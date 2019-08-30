@@ -1,0 +1,21 @@
+{
+  "name": "Eat-Da-Burger",
+  "version": "1.0.0",
+  "description": "A Simple Full Stack Application  with MySQL, Node, Express, Handlebars and ORM.  Follows the MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate HTML.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwilbor/Eat-Da-Burger.git"
+  },
+  "keywords": [],
+  "author": "Franklin Wilborn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fwilbor/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/fwilbor/Eat-Da-Burger#readme"
+}
