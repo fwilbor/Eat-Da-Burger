@@ -6,8 +6,8 @@ var burger = {
     });
   },
 
-  insertOne: function (cols, vals, cb) {
-    orm.insertOne("burgers", cols, vals, function (res) {
+  insertOne: function (name, cb) {
+    orm.insertOne("burgers", ["burger_name", "devoured"], [name, false], function (res) {
       cb(res);
     });
   },
@@ -16,13 +16,9 @@ var burger = {
     orm.updateOne("burgers", objColVals, condition, function (res) {
       cb(res);
     });
-  },
-
-  deleteOne: function (condition, cb) {
-    orm.deleteOne("burgers", condition, function (res) {
-      cb(res);
-    });
   }
-};
+
+}
+
 
 module.exports = burger;
