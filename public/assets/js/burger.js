@@ -35,7 +35,7 @@ $(function () {
         });
     });
 
-    $(".trashburger").on("click", function (event) {
+    $("#trashbutton").on("click", function (event) {
         event.preventDefault();
 
         var id = $(this).data("id");
