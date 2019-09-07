@@ -99,17 +99,21 @@ var orm = {
             cb(result);
         });
     },
-    deleteOne: function (table, condition, cb) {
-        var dbQuery = "DELETE FROM " + table + " WHERE " + condition;
-        console.log(dbQuery);
 
-        connection.query(dbQuery, function (err, res) {
+    deleteOne: function (table, condition, cb) {
+        var queryString = "DELETE FROM " + table;
+        queryString += " WHERE ";
+        queryString += condition;
+
+        connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
-            cb(res);
+
+            cb(result);
         });
     }
+
 };
 module.exports = orm;
 
